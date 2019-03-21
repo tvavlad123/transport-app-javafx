@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<BorderPane prefHeight="569.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+           <children>
+               <Button fx:id="logInButton" layoutY="280" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="30" prefWidth="320" text="Log In" />
+               <TextField fx:id="username" text="test" layoutY="180" prefHeight="30" prefWidth="320" promptText="Username" />
+               <PasswordField fx:id="password" text="test" layoutY="230" prefHeight="30" prefWidth="320" promptText="Password" />
+           </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="540" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="540.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>
